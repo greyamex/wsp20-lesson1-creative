@@ -4,14 +4,30 @@ const app = express() //'app' handles all requests through http
 
 exports.httpReq = functions.https.onRequest(app)
 
-app.get('/', requestHandler);
+app.get('/', frontendHandler); // slash only is called a 'root request'
 
-app.get('/home', requestHandler);
+app.get('/b', backendHandler);
 
-app.get('/login', requestHandler);
+app.get('/home', frontendHandler);
+
+app.get('/login', frontendHandler);
 
 // request and response are provided by the Node.js framework
 // request object: all info being sent from client computer web browser, likewise for response
-function requestHandler(request, response) {
+function frontendHandler(request, response) {
     response.sendFile(__dirname + '/spa/index.html') // specifies absolute full path on this computer where the index.html is
+}
+
+function backendHandler(req, res) {
+    const n = Math.random(); // 0 ~ 1 (not including 1)
+    const num = Math.floor(n * 10); // 0 ~ 9 int
+    let s = 0;
+    s = 50 + 12;
+
+    let page = `
+        <h1>Your lucky number is ${num}</h1>
+        Sum is ${s}
+    `;
+
+    res.send(page)
 }
