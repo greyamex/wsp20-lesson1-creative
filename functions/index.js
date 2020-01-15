@@ -1,6 +1,7 @@
 const functions = require('firebase-functions'); //import this library/module
 const express = require('express') // light req/resp framework
 const app = express() //'app' handles all requests through http
+const path = require('path') // this is for the warning requiring 'path.join()' in place of '+' to concatenate
 
 exports.httpReq = functions.https.onRequest(app)
 
@@ -12,10 +13,11 @@ app.get('/home', frontendHandler);
 
 app.get('/login', frontendHandler);
 
+
 // request and response are provided by the Node.js framework
 // request object: all info being sent from client computer web browser, likewise for response
 function frontendHandler(request, response) {
-    response.sendFile(__dirname + '/spa/index.html') // specifies absolute full path on this computer where the index.html is
+    response.sendFile(path.join(__dirname, '/spa/index.html')) // specifies absolute full path on this computer where the index.html is
 }
 
 function backendHandler(req, res) {

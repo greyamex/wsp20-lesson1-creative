@@ -14,19 +14,25 @@
     <h1>This is my company heading</h1>
     <div id="content"></div>
 
+    <!-- to include function definitions from external JS files ('login_page()') must precede calls with page inclusion: -->
+    <script src="js/login_page.js"></script>
+
     <!-- want to know which 'page' is being requested. console.log displays in console tab of chrome dev tools -->
     <!-- 'document' is a global variable representing the contents of the web browser -->
+    <!-- reference to '<div id="content"></div>' above is: 'const pageContent = document.getElementById("content")' below -->
+    <!-- 'pageContent' is a global variable within this script -->
     <script>
+      const pageContent = document.getElementById("content")
+
       window.onload = function() {
         const currentPath = window.location.pathname
         console.log('current path = ', currentPath)
-        const pageContent = document.getElementById("content")
         if (currentPath === '/') {
           pageContent.innerHTML = "<h1>Root Page</h1>"
         } else if (currentPath === '/home') {
           pageContent.innerHTML = "<h1>Home Page</h1>"
         } else if (currentPath === '/login') {
-          pageContent.innerHTML = "<h1>Login Page</h1>"
+          login_page()
         }
       }
     </script>
