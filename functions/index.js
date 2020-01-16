@@ -2,6 +2,7 @@ const functions = require('firebase-functions'); //import this library/module
 const express = require('express') // light req/resp framework
 const app = express() //'app' handles all requests through http
 const path = require('path') // this is for the warning requiring 'path.join()' in place of '+' to concatenate
+const util = require('util')
 
 exports.httpReq = functions.https.onRequest(app)
 
