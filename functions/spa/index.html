@@ -16,6 +16,7 @@
 
     <!-- to include function definitions from external JS files ('login_page()') must precede calls with page inclusion: -->
     <script src="js/login_page.js"></script>
+    <script src="js/home_page.js"></script>
 
     <!-- want to know which 'page' is being requested. console.log displays in console tab of chrome dev tools -->
     <!-- 'document' is a global variable representing the contents of the web browser -->
@@ -30,7 +31,7 @@
         if (currentPath === '/') {
           pageContent.innerHTML = "<h1>Root Page</h1>"
         } else if (currentPath === '/home') {
-          pageContent.innerHTML = "<h1>Home Page</h1>"
+          home_page()
         } else if (currentPath === '/login') {
           login_page()
         }
