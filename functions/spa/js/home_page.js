@@ -1,7 +1,7 @@
 function home_page() {
     pageContent.innerHTML = `
     <!-- Dropdown Menu -->
-    <div class="btn-group" style="padding-bottom: 45px;">
+    <div class="btn-group" style="padding-bottom: 32px;">
     <button align="center" style="background-color: #000000; color:white; font-size:15px;" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Get Started
     </button>
