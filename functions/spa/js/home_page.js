@@ -1,9 +1,25 @@
 function home_page() {
     pageContent.innerHTML = `
+    <!-- Your Menu code will be here -->
+    <div class="btn-group">
+    <button align="center" style="color:lightgray;" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Get Started
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownmenu2">
+    <button class="dropdown-item" type="button">All Boroughs</button>
+    <button class="dropdown-item" type="button">Manhattan</button>
+    <button class="dropdown-item" type="button">Brooklyn</button> 
+    <button class="dropdown-item" type="button">Queens</button>
+    <button class="dropdown-item" type="button">The Bronx</button> 
+    <button class="dropdown-item" type="button">Staten Island</button> 
+    </div>
+    </div>
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/manhattan-01.jpg" class="d-block w-100" alt="...">
+        <input type ="button" class="classic_button_next btn btn-primary btn-large" id="next_button" value="Next >>"/>
       </div>
       <div class="carousel-item">
         <img src="images/brownstone-01.webp" class="d-block w-100" alt="...">
