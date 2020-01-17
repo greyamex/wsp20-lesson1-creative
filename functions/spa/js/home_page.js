@@ -1,17 +1,22 @@
 function home_page() {
     pageContent.innerHTML = `
-    <!-- Your Menu code will be here -->
-    <div class="btn-group">
-    <button align="center" style="color:lightgray;" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <!-- Dropdown Menu -->
+    <div class="btn-group" style="padding-bottom: 45px;">
+    <button align="center" style="background-color: #000000; color:white; font-size:15px;" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Get Started
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownmenu2">
-    <button class="dropdown-item" type="button">All Boroughs</button>
+    <button class="dropdown-item" type="button"></button>
     <button class="dropdown-item" type="button">Manhattan</button>
     <button class="dropdown-item" type="button">Brooklyn</button> 
     <button class="dropdown-item" type="button">Queens</button>
     <button class="dropdown-item" type="button">The Bronx</button> 
-    <button class="dropdown-item" type="button">Staten Island</button> 
+    <button class="dropdown-item" type="button">Staten Island</button>
+    <button class="dropdown-item" type="button"></button>
+    <button class="dropdown-item" type="button">All Boroughs</button>
+    <button class="dropdown-item" type="button"></button>
+    <button class="dropdown-item" type="button">How It Works</button>
+    <button class="dropdown-item" type="button"></button>
     </div>
     </div>
 
