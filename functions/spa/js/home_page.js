@@ -12,10 +12,11 @@ function home_page() {
     <button class="dropdown-item" type="button">Queens</button>
     <button class="dropdown-item" type="button">The Bronx</button> 
     <button class="dropdown-item" type="button">Staten Island</button>
-    <button class="dropdown-item" type="button"></button>
-    <button class="dropdown-item" type="button">All Boroughs</button>
+    <button class="dropdown-item" type="button">All NYC</button>
     <button class="dropdown-item" type="button"></button>
     <button class="dropdown-item" type="button">How It Works</button>
+    <button class="dropdown-item" type="button"></button>
+    <button href="localhost:5000/login" class="dropdown-item" type="button">Login</button>
     <button class="dropdown-item" type="button"></button>
     </div>
     </div>
