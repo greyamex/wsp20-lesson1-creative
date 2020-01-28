@@ -1,5 +1,6 @@
 function home_page() {
     pageContent.innerHTML = `
+
     <!-- Dropdown Menu -->
     <div class="btn-group" style="padding-bottom: 32px;">
     <button align="center" style="background-color: #000000; color:white; font-size:15px;" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,11 +17,12 @@ function home_page() {
     <button class="dropdown-item" type="button"></button>
     <button class="dropdown-item" type="button">How It Works</button>
     <button class="dropdown-item" type="button"></button>
-    <button href="localhost:5000/login" class="dropdown-item" type="button">Login</button>
+    <button href="login_page.js" class="dropdown-item" type="button">Login</button>
     <button class="dropdown-item" type="button"></button>
     </div>
     </div>
 
+    <!-- Carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
