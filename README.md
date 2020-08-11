@@ -1,4 +1,4 @@
-# WSP Lesson - StableNYC
+# WSP Lesson / StableNYC
 Web server class project to familiarize with HTML, CSS, and JavaScript. I made this a mockup of a landing page for a personal project I am developing.
 <br/><br/>
 
